@@ -12,6 +12,9 @@ html{
 }
 .size{
     max-width:1600px;
+    margin:0px;
+    padding:0px;
+    
 }
 .space{
     width:90%;
@@ -21,10 +24,11 @@ body{
     background-color: rgba(65, 37, 103, 1);
     color:white;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
-    margin-top: 36px;
+    margin-top: 37px;
 }
 .gradient{
      background:linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
@@ -34,6 +38,17 @@ nav{
 }
 .gradient-btn{
     background:linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+    border-radius: 10000px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 19px;
+    color:white;
+    height: 44px;
+    border:none;
+    transition: all 0.3s ease-in-out;
+}
+.gradient-btn:hover{
+    transform: scale(1.25);
 }
 
 nav ul{
@@ -52,13 +67,176 @@ nav li a{
 }
 nav button{
     padding: 12px 16px 12px 16px;
-    border-radius: 10000px;
+    margin-top: 10px;
+    
+}
+nav  button i{
+    margin-left: 4px;
+}
+.fa-bars{
+    display: none;
+}
+.banner{
+    background-image: url('./assets/hero-bg.png');
+    width: 100%;
+    max-width: none;
+    height: 760px;
+    background-size: 100% auto;
+    background-position: center top;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circle-container{
+    position: relative;
+    margin: 0 auto;
+    width:100%
+    
+}
+.circle{
+    width: 100%;
+    display: block;
+}
+.mic{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+   
+}
+.banner .mic{
+    width:35%;
+}
+.badge{
+    position: absolute;
+    width: 75px;
+    height: 38px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 1000px;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    background-color: rgba(0, 255, 136, 1);
+    color:black;
+    font-size: 1.50rem;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    top:6%;
+    left:75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text h1{
+    font-size: 3.6rem;
+    font-weight: 800;
+    line-height: 73px;
+    margin-bottom: 0px;
+}
+.banner-text p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 19px;
+    color:rgba(255, 255, 255, 0.8);
+    
+}
+.spotify{
+    padding: 10px;
     font-size: 1rem;
     font-weight: 600;
     line-height: 19px;
-    color:white;
-    height: 44px;
+    border:none;
+    
+    
 }
-nav i{
-    margin-left: 4px;
+.spotify img{
+    width: 10%;
+    margin-right: 3%;
+    vertical-align: middle;
+}
+.subs-btn{
+   height: 44px;
+   padding: 0px 20px;
+   box-sizing: border-box;
+   border: 1px solid rgba(0, 255, 136, 1);
+   background-color: transparent;
+   color:rgba(0, 255, 136, 1);
+   border-radius: 10000px;
+   display: inline-flex;      
+   align-items: center;       
+   gap: 8px;
+   font-size: 1rem;
+  font-weight: 600;
+  line-height: 19px;
+   
+}
+.subs-btn img{
+    width:21%;
+    vertical-align: middle;
+   
+}
+/* mobile */
+@media screen and (max-width:576px) {
+    .size{
+        max-width:100%;
+    }
+    .space {
+    width: 95%;
+    margin: 0 auto;
+    
+}
+nav ul{
+    display: none;
+}
+nav button{
+    display: none;
+}
+.fa-bars{
+    display: inline;
+    margin-top: 18px;
+}
+.banner{
+    width:100%;
+    height: 446px;
+    background-repeat: none;
+    background-size: cover;   
+    position: relative;
+    background-position: center top;
+   
+}
+.circle-container{
+    position: absolute;
+    top:10%;
+    left:28%;
+    width:88%;
+    margin: 0 auto;
+     width: 43%;
+}
+
+.banner .mic{
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:25%;
+    
+}
+.badge{
+    position: absolute;
+    left:66%;
+    width: 48px;
+    height: 25px;
+    font-size: 1.25rem;
+}
+.banner-text{
+    position: relative;
+    margin-top: 205px;
+}
+.banner-text h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 48px;
+}
 }
