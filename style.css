@@ -177,6 +177,58 @@ nav  button i{
     vertical-align: middle;
    
 }
+.about{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+.about-heading h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 58px;
+}
+.about-heading p{
+  color:rgba(255, 255, 255, 0.8);
+}
+.about-heading p1{
+    
+    width:80%;
+    margin: 0 auto;
+   
+}
+.p2{
+    margin-top: 3%;
+}
+.about-hr{
+    width:100%;
+    border:1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 79.5px;
+}
+.about-container{
+    display: flex;
+    justify-content: space-around;
+}
+.about-container h2{
+    color: rgba(0, 255, 136, 1);
+    font-size: 2.5rem;
+    font-weight: 800;
+   line-height: 58px;
+    margin-bottom: 0px;
+}
+.about-container{
+    color:rgba(255, 255, 255, 0.8);
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 20px;
+}
+.rate{
+    display: inline-flex;
+    align-items: center;
+}
+.fa-star{
+   font-size: 1.9rem;
+
+}
 /* mobile */
 @media screen and (max-width:576px) {
     .size{
@@ -198,12 +250,13 @@ nav button{
     margin-top: 18px;
 }
 .banner{
+    background-image: url('./assets/hero-bg.png');
     width:100%;
     height: 446px;
-    background-repeat: none;
     background-size: cover;   
     position: relative;
-    background-position: center top;
+    background-position: center center;
+
    
 }
 .circle-container{
@@ -216,7 +269,6 @@ nav button{
 }
 
 .banner .mic{
-    
     position: absolute;
     top:50%;
     left:50%;
@@ -231,12 +283,23 @@ nav button{
     font-size: 1.25rem;
 }
 .banner-text{
-    position: relative;
-    margin-top: 205px;
+    
+    margin-top: 45%;
+    width: 95%;
 }
 .banner-text h1{
     font-size: 2.5rem;
     font-weight: 800;
-    line-height: 48px;
+    line-height: 80%;
+}
+.about-heading h2{
+    line-height: 37px;
+}
+.about-hr{
+    margin-top: 30px;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 }
