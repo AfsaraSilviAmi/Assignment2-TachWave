@@ -175,7 +175,11 @@ nav  button i{
    font-size: 1rem;
   font-weight: 600;
   line-height: 19px;
+  transition: all 0.3s ease-in-out;
    
+}
+.subs-btn:hover{
+    transform: rotate(-45deg);
 }
 .subs-btn img{
     width:21%;
@@ -330,6 +334,12 @@ nav  button i{
     text-align: left;
     
 }
+.vid-card{
+    transition: all 0.3s ease-in-out;
+}
+.vid-card:hover{
+    transform: scale(1.20);
+}
 
 .vid{
     border-radius:24px 24px 0px 0px;
@@ -375,6 +385,7 @@ nav  button i{
     border-radius: 40px;
     padding: 40px;
     gap:24px;
+    margin-bottom: 10%;
 }
 .host-name h3{
     font-size: 2rem;
@@ -398,7 +409,35 @@ nav  button i{
     align-items: center;
     justify-content: center;
 }
+footer{
+    background-image: url('./assets/footer-bg.png');
+    width: 100%;
+    height: 412px;
+    text-align: center;
+    align-content: center;
 
+}
+footer h1{
+    font-size: 4rem;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2.5%;
+    padding-bottom: 3%;
+    padding-left: 8%;
+    list-style: none;
+}
+footer ul a{
+    text-decoration: none;
+    color:white;
+   
+}
+footer ul img{
+    display: inline;
+    
+}
 /* mobile */
 @media screen and (max-width:576px) {
     .size{
@@ -513,6 +552,12 @@ nav button{
 }
 .vid-container .vid-card{
     width: 100%;
+}
+.vid-card{
+    transition: none;
+}
+.vid-card:hover{
+    transform: none;
 }
 .vid iframe{
     width:100%;
