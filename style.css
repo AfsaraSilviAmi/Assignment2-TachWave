@@ -21,7 +21,12 @@ html{
     margin: 0 auto;
 }
 body{
-    background-color: rgba(65, 37, 103, 1);
+    background: linear-gradient(
+    65deg,
+    rgba(0, 0, 0, 1),
+    rgba(26, 11, 46, 1),
+    rgba(37, 13, 68, 1)
+);
     color:white;
 }
 
@@ -229,6 +234,108 @@ nav  button i{
    font-size: 1.9rem;
 
 }
+.choose{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(35, 14, 61, 1);
+    
+    
+}
+.choose h2{
+    margin-top: 10%;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 58px;
+    
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+.choose-container{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-areas: "card1 card2 card2"
+   "card1 card3 card3"
+   "card4 card4 card5";
+   gap:30px;
+   margin-bottom: 10%;
+   
+   
+   
+}
+.choose-container div{
+    border-radius: 40px;
+   background-color: rgba(53, 17, 101, 0.4);
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+   
+}
+.choose-container h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+   line-height: 29px;
+}
+.choose-container p{
+    color: rgba(255, 255, 255, 0.6);
+}
+.card1{
+    margin-left: 30%;
+}
+.card4{
+    margin-left: 15%;
+    margin-right: 10%;
+}
+.card2, .card3{
+    margin-right: 20%;
+}
+.card5{
+    margin-right: 40%;
+    margin-left: -20%;
+    
+}
+.vid-sec h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 58px;
+    margin-top: 10%;
+}
+.vid-container{
+    display: flex;
+    
+    justify-content: space-around;
+    
+}
+.vid-container .vid-card{
+    border-radius: 24px 24px;
+    background-color: rgba(37, 13, 68, 1);
+    width: 380px;
+
+    
+}
+.vid{
+    border-radius:24px 24px 0px 0px;
+    overflow: hidden;  
+}
+.vid iframe{
+    border: none;   
+}
 /* mobile */
 @media screen and (max-width:576px) {
     .size{
@@ -302,4 +409,29 @@ nav button{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+.choose{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.choose-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: none;
+    gap:20px;
+    grid-auto-rows: auto;
+}
+  .choose-container div {
+      display: flex;
+      flex-direction: column;
+      margin: 3%;
+      align-items: flex-start; 
+      justify-content: center; 
+      text-align: left;
+      grid-area: unset;
+  }
+  .choose h2{
+    font-size: 2rem;
+  }
+
 }
