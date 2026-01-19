@@ -225,6 +225,7 @@ nav  button i{
    font-size: 1rem;
    font-weight: 400;
    line-height: 20px;
+   margin-bottom: 10%;
 }
 .rate{
     display: inline-flex;
@@ -318,17 +319,18 @@ nav  button i{
 }
 .vid-container{
     display: flex;
-    
     justify-content: space-around;
+    margin-bottom: 10%;
     
 }
 .vid-container .vid-card{
     border-radius: 24px 24px;
     background-color: rgba(37, 13, 68, 1);
     width: 380px;
-
+    text-align: left;
     
 }
+
 .vid{
     border-radius:24px 24px 0px 0px;
     overflow: hidden;  
@@ -336,6 +338,67 @@ nav  button i{
 .vid iframe{
     border: none;   
 }
+.vid-card h3, .vid-card p{
+    padding: 1% 4%;
+}
+.vid-card h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 29px;
+}
+.vid-card p, .host-name p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color:rgba(255, 255, 255, 0.6);
+}
+#green{
+    color:rgba(0, 255, 136, 1);
+    
+}
+#green img{
+    padding-right: 2%;
+    vertical-align: middle;
+}
+.host h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+}
+.host-container{
+    display: flex;
+    justify-content: space-around;
+    width:95%;
+    align-items: center;
+    background-color:rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    padding: 40px;
+    gap:24px;
+}
+.host-name h3{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 39px;
+}
+.social{
+    display: flex;
+    gap:1.2%;
+}
+.social img{
+     
+    vertical-align: middle;
+
+}
+.social-icon{
+    border-radius: 50%;
+    border: 1px solid rgba(83, 60, 114, 1);
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* mobile */
 @media screen and (max-width:576px) {
     .size{
@@ -434,4 +497,58 @@ nav button{
     font-size: 2rem;
   }
 
+.vid-container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 1%;
+    
+}
+.vid-sec h2{
+    font-size: 2rem;
+    line-height: 39px;
+}
+.vid-card h3{
+    font-size: 1.25rem;
+   line-height: 24px;
+}
+.vid-container .vid-card{
+    width: 100%;
+}
+.vid iframe{
+    width:100%;
+}
+.host{
+    display: flex;
+    flex-direction: column;
+}
+.host-container>img{
+    width:50%;
+}
+.host-container{
+    display: grid;
+    text-align: center;
+    width: 75%;
+    justify-items: center;
+    padding: 10%;
+    margin: 0 auto;
+}
+.social{
+   justify-content: center;
+   gap:4.5%;
+   
+
+}
+.social-icon{
+   padding: 2%;
+}
+.host h2{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 39px;
+}
+.host-name h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 29px;
+}
 }
